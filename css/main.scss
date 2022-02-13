@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to right, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+
+    h1{
+        color: white;
+    }
+}
+
+main{
+    width: 100%;
+    height: 88vh;
+    
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 100%;
+    }
+
+    section{
+        width: 280px;
+        height: 280px;
+        background: white;
+
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        aside{
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+            animation: efeito 3s 0s forwards;
+        }
+        
+        .card_one{
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);        }
+        }
+        
+        .card_two{
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+        }
+
+        .card_three{
+            background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+        }
+
+    @keyframes efeito {
+        0%{
+            background: white;
+            width: 20px;
+            height: 20px;
+        }
+
+        100%{
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 960px){
+        article{
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+
+            justify-content: start;
+
+            section{
+                flex: none;
+                scroll-snap-align: center;
+
+                margin: 0 50% 0 50%;
+            }
+        }
+    }
+}
