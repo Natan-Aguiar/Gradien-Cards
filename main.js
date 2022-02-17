@@ -1,7 +1,7 @@
 const card_effect = document.querySelectorAll(".card_effect");
-    card_effect[0].addEventListener("click", corFundo0);
-    card_effect[1].addEventListener("click", corFundo1);
-    card_effect[2].addEventListener("click", corFundo2);
+card_effect[0].onclick = corFundo0;
+card_effect[1].onclick = corFundo1;
+card_effect[2].onclick = corFundo2;
 
 const main = document.querySelector(".main");
 
