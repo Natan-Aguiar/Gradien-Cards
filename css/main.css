@@ -85,7 +85,6 @@ main .card_three {
 
 @-webkit-keyframes efeito {
   0% {
-    background: white;
     width: 20px;
     height: 20px;
   }
@@ -97,7 +96,6 @@ main .card_three {
 
 @keyframes efeito {
   0% {
-    background: white;
     width: 20px;
     height: 20px;
   }
