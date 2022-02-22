@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -22,7 +22,7 @@ main article {
   height: 100%;
 }
 
-main section {
+main article section {
   width: 280px;
   height: 280px;
   background: white;
@@ -40,7 +40,7 @@ main section {
           justify-content: center;
 }
 
-main section aside {
+main article section .card_effect {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -48,19 +48,19 @@ main section aside {
           animation: efeito 3s 0s forwards;
 }
 
-main section .card_one {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff0844), to(#ffb199));
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+main article section .card_one {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
-main .card_two {
+main article section .card_two {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f43b47), to(#453a94));
   background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
 }
 
-main .card_three {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#3f51b1), color-stop(13%, #5a55ae), color-stop(25%, #7b5fac), color-stop(38%, #8f6aae), color-stop(50%, #a86aa4), color-stop(62%, #cc6b8e), color-stop(75%, #f18271), color-stop(87%, #f3a469), to(#f7c978));
-  background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+main article section .card_three {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#007adf), to(#00ecbc));
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
 }
 
 @-webkit-keyframes efeito {
