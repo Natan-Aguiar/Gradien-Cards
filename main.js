@@ -1,4 +1,10 @@
-document.querySelectorAll(".card_effect").forEach((card_effect)=> { //seleciona todas class e para cada um deles
-    card_effect.onclick = () =>                                     // retorna um evento
-    document.querySelector("main").style.background = getComputedStyle(card_effect).background;      
-});
+(function() {
+    const main = document.querySelector("main");
+    const myCards = document.querySelectorAll(".card_effect");
+
+    myCards.forEach( myCards => { // altera background do Main pelo de 
+        myCards.onclick = () =>   // cada card selecionado.
+        main.style.background = getComputedStyle(myCards).background;      
+    });
+
+}) (); // função que se auto-invoca
